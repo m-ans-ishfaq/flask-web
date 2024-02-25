@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Books {% endblock %}
+{% block content %}
+
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+        <h1>Books</h1>
+        <ul>
+            {% for book in books %}
+                <li>{{ book }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
